@@ -72,6 +72,9 @@
 
   hr {
     width: 65%;
+    height: 5px;
+    border: none;
+    background-color: #fff;
   }
 
   footer {
