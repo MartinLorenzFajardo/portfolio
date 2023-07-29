@@ -17,7 +17,7 @@
     width: 100%;
     overflow: hidden;
     justify-content: center;
-    background-color: rgba(4, 39, 114, 0.3);
+    background-color: rgb(3, 22, 65);
     }
 
   .topnav a {
@@ -45,11 +45,25 @@
   .me,
   .certifications,
   .trainingSeminar,
-  .experience {
+  .experience,
+  .skills-prog {
     margin-top: 80px;
     margin-left: 100px;
     margin-right: 100px;
     margin-bottom: 100px;
+  }
+
+  .skillprog {
+    display: flex;
+    justify-content: center;
+  }
+
+  .prog {
+    width: 850px;
+    height: 600px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: auto;
   }
 
   h1 {

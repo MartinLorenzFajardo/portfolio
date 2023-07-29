@@ -62,17 +62,28 @@
   }
 
   h1 {
-    font-size: 70px;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 90px;
+    font-family: 'Open Sans', Helvetica, Arial;
+  }
+
+  h2 {
+    font-size: 50px;
+    font-family:monospace;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   }
 
   span {
     color: #000000;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255, 0.8);
+  }
+
+  .shadow-text {
+    text-shadow: 2px 2px 4px rgba(10, 153, 172, 1);
   }
 
   hr {
-    width: 65%;
-    height: 5px;
+    width: 55%;
+    height: 10px;
     border: none;
     background-color: #fff;
   }
