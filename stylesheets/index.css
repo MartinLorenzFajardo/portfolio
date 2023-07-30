@@ -81,6 +81,24 @@
     text-shadow: 2px 2px 4px rgba(10, 153, 172, 1);
   }
 
+  button {
+    text-decoration: none !important;
+    height: 60px;
+    width: 170px;
+    border: #000000;
+    border-radius: 5%;
+    background-color: #000000;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  button:hover {
+    background-color: #fff;
+    color: #000000;
+  }
+
   hr {
     width: 55%;
     height: 10px;
