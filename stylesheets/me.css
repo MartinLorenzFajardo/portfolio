@@ -1,100 +1,108 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  body {
-    background-image: linear-gradient(to right, rgb(4, 37, 68) , rgb(119, 137, 218));
-    color: #fff;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
+body {
+  background-image: linear-gradient(to right, rgb(4, 37, 68) , rgb(119, 137, 218));
+  color: #fff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-  .topnav {
-    display: flex;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    overflow: hidden;
-    justify-content: center;
-    background-color: rgb(3, 22, 65);
-    }
 
+
+/*===========================================THIS IS THE NAVIGATION BAR FOR THE ENTIRE PAGE===========================================*/
+.topnav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  background-color: rgb(3, 22, 65);
+}
+.topnav a {
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: color 0.3s;
+}
+.topnav a:hover {
+  color: #000000;
+}
+/* Style the navigation links for smaller screens */
+@media screen and (max-width: 600px) {
   .topnav a {
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 16px;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 17px;
-    transition: color 0.3s;
+    float: none;
+    display: block;
   }
+}
 
-  .topnav a:hover {
-    color: #000000;
-  }
 
-  /* Style the navigation links for smaller screens */
-  @media screen and (max-width: 600px) {
-    .topnav a {
-      float: none;
-      display: block;
-    }
-  }
 
-  .me,
-  .certifications,
-  .trainingSeminar,
-  .experience,
-  .skills-prog {
-    margin-top: 80px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 100px;
-  }
 
-  .skillprog {
-    display: flex;
-    justify-content: center;
-  }
+.me,
+.certifications,
+.trainingSeminar,
+.experience,
+.skills-prog {
+  margin-top: 80px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+}
 
-  .prog {
-    width: 850px;
-    height: 600px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: auto;
-  }
+.skillprog {
+  display: flex;
+  justify-content: center;
+}
 
-  h1 {
-    color: #000000;
-  }
+.prog {
+  width: 850px;
+  height: 600px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: auto;
+}
 
-  hr {
-    background-color: #585656;
-    height: 2px;
-    border: none;
-  }
+h1 {
+  color: #000000;
+}
 
-  footer {
-    padding: 10px;
-    text-align: center;
-    color: #fff;
-    font-size: 14px;
-    bottom: 0;
-    width: 100%;
-  }
+hr {
+  background-color: #585656;
+  height: 2px;
+  border: none;
+}
 
-  /* SCROLLBAR */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #155b94;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #0b2e4b;
-  }
+
+
+/*===========================================THIS IS THE FOOTER FOR THE ENTIRE PAGE===========================================*/
+footer {
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+/*===========================================THIS IS THE SCROLL BAR FOR THE ENTIRE PAGE===========================================*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+:-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #155b94;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0b2e4b;
+}

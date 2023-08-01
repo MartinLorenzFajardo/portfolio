@@ -10,130 +10,131 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
-  .topnav {
-    display: flex;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    overflow: hidden;
-    justify-content: center;
-    background-color: rgba(4, 39, 114, 0.3);
-    }
 
+
+/*===========================================THIS IS THE NAVIGATION BAR FOR THE ENTIRE PAGE===========================================*/
+.topnav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  background-color: rgba(4, 39, 114, 0.3);
+}
+.topnav a {
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: color 0.3s;
+}
+.topnav a:hover {
+  color: #000000;
+}
+/* Style the navigation links for smaller screens */
+@media screen and (max-width: 600px) {
   .topnav a {
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 16px;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 17px;
-    transition: color 0.3s;
+    float: none;
+    display: block;
+    flex-direction: row;
   }
+}
 
-  .topnav a:hover {
-    color: #000000;
-  }
+img {
+  max-width: 450px;
+  border-radius: 10px;
+  float: right;
+}
 
-  /* Style the navigation links for smaller screens */
-  @media screen and (max-width: 600px) {
-    .topnav a {
-      float: none;
-      display: block;
-      flex-direction: row;
-    }
-  }
+.content1 {
+  width: 100%;
+  height:fit-content;
+  float: left;
+  margin: 20px auto;
+  padding: 50px 200px 50px 200px;
+}
 
-  img {
-    max-width: 450px;
-    border-radius: 10px;
-    float: right;
-  }
+.hello {
+  margin-top: 160px;
+}
 
-  .content1 {
-    width: 100%;
-    height:fit-content;
-    float: left;
-    margin: 20px auto;
-    padding: 50px 200px 50px 200px;
-    background-color: aquamarine;
-  }
+h1 {
+  font-size: 90px;
+  font-family: 'Open Sans', Helvetica, Arial;
+}
 
-  .hello {
-    margin-top: 160px;
-  }
+h2 {
+  font-size: 50px;
+  font-family:monospace;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
 
-  h1 {
-    font-size: 90px;
-    font-family: 'Open Sans', Helvetica, Arial;
-  }
+span {
+  color: #000000;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255, 0.8);
+}
 
-  h2 {
-    font-size: 50px;
-    font-family:monospace;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  }
+.shadow-text {
+  text-shadow: 2px 2px 4px rgba(10, 153, 172, 1);
+}
 
-  span {
-    color: #000000;
-    text-shadow: 2px 2px 4px rgb(255, 255, 255, 0.8);
-  }
+button {
+  text-decoration: none !important;
+  height: 60px;
+  width: 170px;
+  border: #000000;
+  border-radius: 5%;
+  background-color: #000000;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px;
+  padding: 10px;
+}
 
-  .shadow-text {
-    text-shadow: 2px 2px 4px rgba(10, 153, 172, 1);
-  }
+button:hover {
+  background-color: #fff;
+  color: #000000;
+}
 
-  button {
-    text-decoration: none !important;
-    height: 60px;
-    width: 170px;
-    border: #000000;
-    border-radius: 5%;
-    background-color: #000000;
-    color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 20px;
-    padding: 10px;
-  }
+hr {
+  width: 55%;
+  height: 10px;
+  border: none;
+  background-color: #fff;
+}
 
-  button:hover {
-    background-color: #fff;
-    color: #000000;
-  }
 
-  hr {
-    width: 55%;
-    height: 10px;
-    border: none;
-    background-color: #fff;
+/*===========================================THIS IS THE FOOTER FOR THE ENTIRE PAGE===========================================*/
+footer {
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* Additional styles for different screen sizes */
+@media screen and (max-width: 576px) {
+  .footer {
+    font-size: 0.8rem;
   }
+}
 
-  footer {
-    padding: 10px;
-    text-align: center;
-    color: #fff;
-    font-size: 14px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
 
-  /* Additional styles for different screen sizes */
-    @media screen and (max-width: 576px) {
-    .footer {
-      font-size: 0.8rem;
-    }
-  }
-
-  /* SCROLLBAR */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #155b94;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #0b2e4b;
-  }
+/*===========================================THIS IS THE SCROLL BAR FOR THE ENTIRE PAGE===========================================*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #155b94;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0b2e4b;
+}

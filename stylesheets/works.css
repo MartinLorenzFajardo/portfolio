@@ -2,111 +2,116 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
 
-  body {
-    background-image: linear-gradient(to right, rgb(4, 37, 68) , rgb(119, 137, 218));
-    color: #fff;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
+body {
+  background-image: linear-gradient(to right, rgb(4, 37, 68) , rgb(119, 137, 218));
+  color: #fff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-  .topnav {
-    display: flex;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    overflow: hidden;
-    justify-content: center;
-    background-color: rgb(3, 22, 65);
-    }
 
+
+/*===========================================THIS IS THE NAVIGATION BAR FOR THE ENTIRE PAGE===========================================*/
+.topnav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  background-color: rgb(3, 22, 65);
+}
+.topnav a {
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: color 0.3s;
+}
+.topnav a:hover {
+  color: #000000;
+}
+a {
+  text-decoration: none !important;
+  color: #000000;
+}
+a:hover {
+  color: #0da33a;
+}
+/* Style the navigation links for smaller screens */
+@media screen and (max-width: 600px) {
   .topnav a {
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 16px;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 17px;
-    transition: color 0.3s;
+    float: none;
+    display: block;
   }
-
-  .topnav a:hover {
-    color: #000000;
-  }
-
-  a {
-    text-decoration: none !important;
-    color: #000000;
-  }
-
-  a:hover {
-    color: #0da33a;
-  }
-
-  .works {
-    margin: 60px;
-  }
-
-  .workcontents {
-    margin: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    padding: 10px;
-  }
-
-  .work1,
-  .work2,
-  .work3 {
-    margin-bottom: 150px;
-  }
-
-  div img {
-    width: 550px;
-    height: 300px;
-    border: 2px solid #0b2e4b;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-
-  .work1imgs,
-  .work2imgs {
-    margin-bottom: 30px;
-  }
-
-  div img:hover{
-    transform: scale(1.03);
-  }
+}
 
 
-  /* Style the navigation links for smaller screens */
-  @media screen and (max-width: 600px) {
-    .topnav a {
-      float: none;
-      display: block;
-    }
-  }
 
-  footer {
-    padding: 10px;
-    text-align: center;
-    color: #fff;
-    font-size: 14px;
-    bottom: 0;
-    width: 100%;
-  }
+.works {
+  margin: 60px;
+}
 
-  /* SCROLLBAR */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #155b94;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #0b2e4b;
-  }
+.workcontents {
+  margin: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.work1,
+.work2,
+.work3 {
+  margin-bottom: 150px;
+}
+
+div img {
+  width: 550px;
+  height: 300px;
+  border: 2px solid #0b2e4b;
+  border-radius: 10px;
+  cursor: pointer;
+}
+div img:hover{
+  transform: scale(1.03);
+}
+
+.work1imgs,
+.work2imgs {
+  margin-bottom: 30px;
+}
+
+
+
+
+/*===========================================THIS IS THE FOOTER FOR THE ENTIRE PAGE===========================================*/
+footer {
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+
+/*===========================================THIS IS THE SCROLL BAR FOR THE ENTIRE PAGE===========================================*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #155b94;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0b2e4b;
+}
