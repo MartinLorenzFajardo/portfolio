@@ -1,15 +1,14 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
 
 body {
-  background-image: linear-gradient(to right, rgb(4, 37, 68) , rgb(119, 137, 218));
+  background-image: linear-gradient(to right, rgb(4, 37, 68) , rgb(78, 9, 9));
   color: #fff;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
+  }
 
 
 /*===========================================THIS IS THE NAVIGATION BAR FOR THE ENTIRE PAGE===========================================*/
@@ -20,12 +19,11 @@ body {
   width: 100%;
   overflow: hidden;
   justify-content: center;
-  background-color: rgb(3, 22, 65);
 }
 .topnav a {
   color: #ffffff;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 30px;
   margin: 0 15px;
   text-decoration: none;
   font-size: 17px;
@@ -34,22 +32,47 @@ body {
 .topnav a:hover {
   color: #000000;
 }
-a {
-  text-decoration: none !important;
-  color: #000000;
-}
-a:hover {
-  color: #0da33a;
-}
 /* Style the navigation links for smaller screens */
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .topnav a {
     float: none;
     display: block;
+    flex-direction: row;
   }
 }
 
 
+/*===========================================THIS IS THE CONTENT FOR THE ENTIRE PAGE===========================================*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  flex-basis: calc(33.33% - 20px); /* Adjusted width for 3 columns with 20px padding */
+  padding: 10px; /* Half of the padding for each side to maintain the original padding amount */
+  box-sizing: border-box;
+}
+
+/* Adjustments for responsiveness */
+@media screen and (max-width: 992px) {
+  .column {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex-basis: calc(100% - 20px);
+  }
+}
+
+
+
+.shadow-text {
+  text-shadow: 2px 2px 4px rgb(172, 10, 10);
+}
 
 .works {
   margin: 60px;
@@ -65,14 +88,13 @@ a:hover {
 }
 
 .work1,
-.work2,
-.work3 {
+.work2 {
   margin-bottom: 150px;
 }
 
 div img {
   width: 550px;
-  height: 300px;
+  height: auto;
   border: 2px solid #0b2e4b;
   border-radius: 10px;
   cursor: pointer;
@@ -84,8 +106,60 @@ div img:hover{
 .work1imgs,
 .work2imgs {
   margin-bottom: 30px;
+  align-items: center;
 }
 
+
+/* Style the modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  overflow: auto; /* Enable scrolling within the modal */
+}
+/* Style the modal content */
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  transition: transform 0.2s; /* Add a smooth transition effect */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Add a subtle shadow for the modal content */
+}
+/* Make the modal content bigger */
+.modal.show .modal-content {
+  transform: scale(3); /* Increase the size */
+}
+/* Close button for the modal */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* Make the modal content bigger on larger screens */
+@media screen and (min-width: 800px) {
+  .modal.show .modal-content {
+    transform: scale(2); /* Increase the size for larger screens */
+  }
+}
+/* Adjust modal size for medium screens */
+@media screen and (max-width: 767px) and (min-width: 601px) {
+  .modal.show .modal-content {
+    transform: scale(1); /* Reset the size for medium screens */
+  }
+}
+/* Adjust modal size for smaller screens */
+@media screen and (max-width: 600px) {
+  .modal.show .modal-content {
+    transform: scale(0.8); /* Decrease the size for smaller screens */
+  }
+}
 
 
 
@@ -98,7 +172,12 @@ footer {
   bottom: 0;
   width: 100%;
 }
-
+/* Additional styles for different screen sizes */
+@media screen and (max-width: 576px) {
+  .footer {
+    font-size: 0.8rem;
+  }
+}
 
 
 

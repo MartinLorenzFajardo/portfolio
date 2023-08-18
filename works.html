@@ -8,49 +8,69 @@
 </head>
 
 <body>
-    <div class="everything">
-        <div class="topnav">
-          <a href="index.html">Home</a>
-          <a href="me.html">Me</a>
-          <a href="contact.html">Contact</a>
-          <a href="works.html">Works</a>
-          <a href="settings.html">Settings</a>
-        </div>
-        <div class="works">
-          <h1>My Works</h1>
-        </div>
-        <div class="workcontents">
+  <div class="everything">
 
-          <div class="work1">
-            <div class="work1imgs">
-              <img class="hs" src="assets/images/homescreen.png" alt="homescreen">
-              <img class="lvl3" src="assets/images/lvl3.png" alt="lvl3">
-              <img class="note" src="assets/images/lvl3note.png" alt="lvl3note">
-              <img class="lvl4" src="assets/images/lvl4.png" alt="lvl4">
-              <img class="lvl5" src="assets/images/lvl5.png" alt="lvl5">
-              <img class="ending" src="assets/images/ending.png" alt="ending">
-            </div>
-            <h3>Game Development: "Project Anatomy"</h3>
-            <p>Project Anatomy is a group project by CHAMPORADO for our Specialized Subject in Grade 12. We successfully created an Educational Platformer-RPG game with the theme of health.</p>
-            <br>
-            <p><b>Language / Sofware: </b>Construct 3</p>
-            <p><b>Role: </b>Artist, Programmer, Researcher</p>
-            <p>Our group was divided into 2, programmers and the researchers. The programmers will create the game while the researchers will create the Research Paper. (It was a 2 project in 1)</p>
-            <p>
-              Project Anatomy's Idea is that a doctor in the future was able to make a ground breaking discovery that could help fight diseases. It was the Shrinking Technology. He managed to Shrinking
-              himself and get inside the patient's body where he will eradicate the disease from within. The game consists of 5 levels each getting harder and harder the higher your level is.
-            </p>
-            <br>
-            <p>Want to try the game? <a href="https://champorado.itch.io/project-anatomy" target="_blank">Click This</a></p>
-        </div>
+    <div class="topnav">
+      <a href="index.html">Me</a>
+      <a href="works.html">Works</a>
+      <a href="credits.html">Credits</a>
+    </div>
 
-        <div class="work2">
-          <div class="work2imgs">
-            <img class="homescreen1" src="assets/images/home1.png" alt="homescreen1">
-            <img class="homescreen2" src="assets/images/home2.png" alt="homescreen2">
-            <img class="categories" src="assets/images/categories.png" alt="categories">
-            <img class="review" src="assets/images/review.png" alt="review">
+    <div class="works">
+      <h1><span class="shadow-text">My Works</span></h1>
+    </div>
+
+    <div class="workcontents">
+        <div class="row">
+          <div class="column">
+            <img src="assets/images/homescreen.png" alt="homescreen" onclick="openModal(this)" style="width:100%">
           </div>
+          <div class="column">
+            <img src="assets/images/lvl3.png" alt="lvl3" onclick="openModal(this)" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="assets/images/lvl3note.png" alt="lvl3note" onclick="openModal(this)" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="assets/images/lvl4.png" alt="lvl4" onclick="openModal(this)" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="assets/images/lvl5.png" alt="lvl5" onclick="openModal(this)" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="assets/images/ending.png" alt="ending" onclick="openModal(this)" style="width:100%">
+          </div>
+        </div>
+        <div class="text1">
+          <h3>Game Development: "Project Anatomy"</h3>
+          <p>Project Anatomy is a group project by CHAMPORADO for our Specialized Subject in Grade 12. We successfully created an Educational Platformer-RPG game with the theme of health.</p>
+          <br>
+          <p><b>Language / Sofware: </b>Construct 3</p>
+          <p><b>Role: </b>Artist, Programmer, Researcher</p>
+          <p>Our group was divided into 2, programmers and the researchers. The programmers will create the game while the researchers will create the Research Paper. (It was a 2 project in 1)</p>
+          <p>
+            Project Anatomy's Idea is that a doctor in the future was able to make a ground breaking discovery that could help fight diseases. It was the Shrinking Technology. He managed to Shrinking
+            himself and get inside the patient's body where he will eradicate the disease from within. The game consists of 5 levels each getting harder and harder the higher your level is.
+          </p>
+          <br>
+          <p>Want to try the game? <a href="https://champorado.itch.io/project-anatomy" target="_blank">Click This</a></p>
+        </div>
+
+      <div class="row">
+        <div class="column">
+          <img src="assets/images/home1.png" alt="homescreen1" onclick="openModal(this)" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="assets/images/home2.png" alt="homescreen2" onclick="openModal(this)" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="assets/images/categories.png" alt="categories" onclick="openModal(this)" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="assets/images/review.png" alt="review" onclick="openModal(this)" style="width:100%">
+        </div>
+      </div>
+        <div class="text2">
           <h3>Web Development: "FlixPlus"</h3>
           <p>
             FlixPlus is a group task by PANDABOYZ during our Work Immersion in Grade 12. We created a Movie Recommendation Website that also functions as a forum for every movie enjoyer to
@@ -67,10 +87,35 @@
           </p>
           <br>
           <p>Want to see the site? <a href="#" target="_blank">Too Bad It Isn't Online</a></p>
+        </div>
+
+      <!-- The modal -->
+      <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+      </div>
+
     </div>
+
   </div>
+
   <footer>
     <p>&copy; All rights reserved 2023.</p>
   </footer>
+  <script>
+    // Open the modal and display the clicked image
+    function openModal(img) {
+      var modal = document.getElementById("myModal");
+      var modalImg = document.getElementById("modalImage");
+      modal.style.display = "flex";
+      modal.classList.add("show"); // Add the "show" class to activate the transition
+      modalImg.src = img.src;
+    }
+    // Close the modal
+    function closeModal() {
+      var modal = document.getElementById("myModal");
+      modal.style.display = "none";
+    }
+  </script>
 </body>
 </html>

@@ -5,16 +5,12 @@
 }
 
 body {
-  background-image: linear-gradient(to right, rgb(4, 37, 68) , rgb(119, 137, 218));
+  background-image: linear-gradient(to right, rgb(4, 37, 68) , rgb(78, 9, 9));
   color: #fff;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  width: 100%;
-  margin: 0 auto;
 }
 
 
-
-/*===========================================THIS IS THE NAVIGATION BAR FOR THE ENTIRE PAGE===========================================*/
 .topnav {
   display: flex;
   position: sticky;
@@ -22,12 +18,11 @@ body {
   width: 100%;
   overflow: hidden;
   justify-content: center;
-  background-color: rgba(4, 39, 114, 0.3);
 }
 .topnav a {
   color: #ffffff;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 30px;
   margin: 0 15px;
   text-decoration: none;
   font-size: 17px;
@@ -37,29 +32,41 @@ body {
   color: #000000;
 }
 /* Style the navigation links for smaller screens */
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .topnav a {
     float: none;
     display: block;
+    flex-direction: row;
   }
 }
 
-
-
-/*===========================================THIS IS THE FOOTER FOR THE ENTIRE PAGE===========================================*/
-footer {
-  padding: 10px;
-  text-align: center;
-  color: #fff;
-  font-size: 14px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+a {
+  text-decoration:none;
+  color: aqua;
 }
 
+.credits,
+.language,
+.src {
+  margin: 100px;
+}
 
+footer {
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    width: 100%;
+  }
+  /* Additional styles for different screen sizes */
+  @media screen and (max-width: 576px) {
+    .footer {
+      font-size: 0.8rem;
+    }
+  }
 
-/*===========================================THIS IS THE SCROLL BAR FOR THE ENTIRE PAGE===========================================*/
+/* SCROLLBAR */
 ::-webkit-scrollbar {
   width: 10px;
 }

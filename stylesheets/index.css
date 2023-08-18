@@ -1,13 +1,13 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   }
 
-  body {
-    background-image: linear-gradient(to right, rgb(4, 37, 68) , rgb(119, 137, 218));
-    color: #fff;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+body {
+  background-image: linear-gradient(to right, rgb(4, 37, 68) , rgb(78, 9, 9));
+  color: #fff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
 
@@ -20,12 +20,11 @@
   width: 100%;
   overflow: hidden;
   justify-content: center;
-  background-color: rgba(4, 39, 114, 0.3);
 }
 .topnav a {
   color: #ffffff;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 30px;
   margin: 0 15px;
   text-decoration: none;
   font-size: 17px;
@@ -35,7 +34,7 @@
   color: #000000;
 }
 /* Style the navigation links for smaller screens */
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .topnav a {
     float: none;
     display: block;
@@ -43,68 +42,144 @@
   }
 }
 
-img {
-  max-width: 450px;
-  border-radius: 10px;
-  float: right;
-}
 
-.content1 {
-  width: 100%;
+/*===========================================THIS IS THE ENTIRE CONTENT FOR THE ENTIRE PAGE===========================================*/
+/*=================THIS IS THE content OF THE ENTIRE PAGE=================*/
+.content {
+  margin: 30px;
+  display: flex; /* Use flexbox for layout */
+}
+/*=====LEFT=====*/
+.left {
   height:fit-content;
-  float: left;
-  margin: 20px auto;
-  padding: 50px 200px 50px 200px;
+  width: 60%;
+  padding: 20px; /* Adding some padding for spacing */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center content vertically */
 }
-
-.hello {
-  margin-top: 160px;
-}
-
 h1 {
-  font-size: 90px;
   font-family: 'Open Sans', Helvetica, Arial;
+  color: #000000;
 }
-
 h2 {
-  font-size: 50px;
   font-family:monospace;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
-
-span {
+.dev {
   color: #000000;
   text-shadow: 2px 2px 4px rgb(255, 255, 255, 0.8);
 }
-
 .shadow-text {
   text-shadow: 2px 2px 4px rgba(10, 153, 172, 1);
 }
-
 button {
   text-decoration: none !important;
   height: 60px;
   width: 170px;
-  border: #000000;
-  border-radius: 5%;
+  border: #640909 3px solid;
+  border-radius: 12px;
   background-color: #000000;
   color: #fff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 20px;
   padding: 10px;
+  transition: background-color 0.3s, color 0.3s;
 }
-
+/* Hover styles for the button */
 button:hover {
-  background-color: #fff;
+  background-color: #bdbaba;
   color: #000000;
 }
-
-hr {
-  width: 55%;
-  height: 10px;
-  border: none;
-  background-color: #fff;
+/* Adjust button styles for smaller screens */
+@media (max-width: 600px) {
+  button {
+    width: 100%; /* Full width button for small screens */
+    max-width: 80px; /* Set a maximum width to control button size */
+    height: auto;
+    margin: 10px 0; /* Adjust margin for better spacing */
+    font-size: 6px; /* Adjust font size for better readability */
+    padding: 5px 10px; /* Adjust padding */
+  }
 }
+/*============THIS IS THE SOSCIALS FOR THE ENTIRE ============*/
+.socials {
+  height:fit-content;
+  float: left;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Adjust the gap between icons */
+}
+.socials a {
+  color: #fff;
+  font-size: 50px; /* Adjust the icon size */
+  text-decoration: none;
+}
+.socials a:hover {
+  color: #bdbaba;
+}
+.fa-youtube:hover {
+  color: #d41414;
+}
+.fa-reddit:hover {
+  color: #d44114;
+}
+.fa-instagram:hover {
+  color: #d40554;
+}
+.fa-github:hover {
+  color: #089b87;
+}
+.fa-twitter:hover {
+  color: #0979e2;
+}
+.fa-facebook:hover {
+  color: #182ffa;
+}
+@media (max-width: 600px) {
+  .socials {
+    flex-direction: row;
+    gap: 10px; /* Adjust the gap between stacked icons */
+    align-items: center;
+  }
+  .socials a {
+    font-size: 15px; /* Decrease the icon size */
+  }
+}
+/*=====RIGHT=====*/
+.right {
+  width: 40%;
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+img {
+  width: 500px;
+  height: auto;
+  border: #0b2e4b solid 3px;
+  border-radius: 10px;
+  height: auto; /* Maintain the image's aspect ratio */
+}
+@media (max-width: 600px) {
+  .right .image img {
+    max-width: 100%; /* Set the maximum width to the available width */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  }
+}
+@media (max-width: 800px) {
+  .right .image img {
+    max-width: 70%; /* Set the maximum width to the available width */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  }
+}
+@media (max-width: 1300px) {
+  .right .image img {
+    max-width: 60%; /* Set the maximum width to the available width */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  }
+}
+
 
 
 /*===========================================THIS IS THE FOOTER FOR THE ENTIRE PAGE===========================================*/
@@ -113,13 +188,13 @@ footer {
   text-align: center;
   color: #fff;
   font-size: 14px;
-  position: fixed;
+  position:fixed;
   bottom: 0;
   width: 100%;
 }
 /* Additional styles for different screen sizes */
-@media screen and (max-width: 576px) {
-  .footer {
+@media (max-width: 576px) {
+  footer {
     font-size: 0.8rem;
   }
 }
