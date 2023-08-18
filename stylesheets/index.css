@@ -45,7 +45,7 @@ body {
 
 /*===========================================THIS IS THE ENTIRE CONTENT FOR THE ENTIRE PAGE===========================================*/
 /*=================THIS IS THE content OF THE ENTIRE PAGE=================*/
-.content {
+.content-lr {
   margin: 30px;
   display: flex; /* Use flexbox for layout */
 }
@@ -106,36 +106,50 @@ button:hover {
 .socials {
   height:fit-content;
   float: left;
-  margin: 0 auto;
+  margin: 10px auto;
   display: flex;
   align-items: center;
   gap: 30px; /* Adjust the gap between icons */
 }
 .socials a {
-  color: #fff;
   font-size: 50px; /* Adjust the icon size */
   text-decoration: none;
 }
-.socials a:hover {
-  color: #bdbaba;
-}
-.fa-youtube:hover {
+.socials .fa-youtube {
   color: #d41414;
 }
-.fa-reddit:hover {
-  color: #d44114;
+.socials .fa-youtube:hover {
+  color: #ff0000; /* Lighter red on hover */
 }
-.fa-instagram:hover {
+.socials .fa-instagram {
   color: #d40554;
 }
-.fa-github:hover {
+.socials .fa-instagram:hover {
+  color: #ff0066; /* Lighter pink on hover */
+}
+.socials .fa-reddit {
+  color: #d44114;
+}
+.socials .fa-reddit:hover {
+  color: #f07b06; /* Lighter orange on hover */
+}
+.socials .fa-github {
   color: #089b87;
 }
-.fa-twitter:hover {
+.socials .fa-github:hover {
+  color: #00b3a1; /* Lighter teal on hover */
+}
+.socials .fa-twitter {
   color: #0979e2;
 }
-.fa-facebook:hover {
-  color: #182ffa;
+.socials .fa-twitter:hover {
+  color: #00aced; /* Lighter blue on hover */
+}
+.socials .fa-facebook{
+  color: #081cd3;
+}
+.socials .fa-facebook:hover {
+  color: #0654fc; /* Lighter blue on hover */
 }
 @media (max-width: 600px) {
   .socials {
@@ -151,7 +165,6 @@ button:hover {
 .right {
   width: 40%;
   display: flex;
-  align-items: center; /* Center content vertically */
   justify-content: center; /* Center content horizontally */
 }
 img {
@@ -181,6 +194,43 @@ img {
 }
 
 
+.h1skills {
+  color: white;
+  margin: 60px 60px 20px 60px;
+}
+/* Add these styles for the skillset section */
+.skillset {
+  width: 60%;
+  margin: 20px auto; /* Center horizontally and add vertical margin */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+.skill {
+  margin-bottom: 15px;
+}
+.skill-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.skill-bar {
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.skill-level {
+  height: 100%;
+  background-color: #000000; /* Change this color as needed */
+  transition: width 0.5s ease;
+}
+
+
+
 
 /*===========================================THIS IS THE FOOTER FOR THE ENTIRE PAGE===========================================*/
 footer {
@@ -188,13 +238,12 @@ footer {
   text-align: center;
   color: #fff;
   font-size: 14px;
-  position:fixed;
   bottom: 0;
   width: 100%;
 }
 /* Additional styles for different screen sizes */
-@media (max-width: 576px) {
-  footer {
+@media screen and (max-width: 576px) {
+  .footer {
     font-size: 0.8rem;
   }
 }
