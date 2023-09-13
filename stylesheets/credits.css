@@ -11,13 +11,21 @@ body {
 }
 
 
+.topnav-container {
+  height: 80px;
+  background-color: #000000;
+  display: flex;
+  justify-content: center; /* Horizontally center-align the items */
+  align-items: center; /* Vertically center-align the items */
+}
 .topnav {
   display: flex;
   position: sticky;
   top: 0;
   width: 100%;
   overflow: hidden;
-  justify-content: center;
+  justify-content: center; /* Horizontally center-align the items */
+  align-items: center; /* Vertically center-align the items */
 }
 .topnav a {
   color: #ffffff;
@@ -29,8 +37,8 @@ body {
   transition: color 0.3s;
 }
 .topnav a:hover {
-  color: #000000;
-}
+  color: #0ac558;
+}  
 /* Style the navigation links for smaller screens */
 @media (max-width: 600px) {
   .topnav a {
